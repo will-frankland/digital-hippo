@@ -32,7 +32,7 @@ export default function Home() {
             <span className="text-purple-600">digital assets</span>.
           </h1>
           <p className="mt-6 text-large max-w-prose text-muted-foreground">
-            Welcome to DigitalHippo. Every asset on our platform is verified by
+            Welcome to HippoHub. Every asset on our platform is verified by
             our team to ensure our highest quality standards.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
