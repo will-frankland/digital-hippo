@@ -80,6 +80,9 @@ const Page = () => {
                     })}
                     placeholder="you@example.ca"
                   />
+                  {errors?.email && (
+                    <p className="text-sm text-red-500">{errors.email.message}</p>
+                  )}
                 </div>
               </div>
               <div className="grid gap-2">
@@ -93,6 +96,9 @@ const Page = () => {
                     })}
                     placeholder="Password"
                   />
+                  {errors?.password && (
+                    <p className="text-sm text-red-500">{errors.password.message}</p>
+                  )}
                 </div>
                 <Button>Sign up</Button>
               </div>
