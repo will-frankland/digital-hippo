@@ -6,6 +6,7 @@ import { notFound, redirect } from "next/navigation";
 import { PRODUCT_CATEGORIES } from "@/config";
 import { Product, ProductFile } from "@/payload-types";
 import { formatPrice } from "@/lib/utils";
+import Link from "next/link";
 
 interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
@@ -141,6 +142,14 @@ const ThankYouPage = async ({ searchParams }: PageProps) => {
                 <p className="text-base">Total</p>
                 <p className="text-base">{formatPrice(orderTotal + 1)}</p>
               </div>
+            </div>
+            <div className="mt-16 border-t border-gray-200 py-6 text-right">
+              <Link
+                href="/products"
+                className="text-sm font-medium text-purple-600 hover:text-purple-500"
+              >
+                Continue shopping &rarr;
+              </Link>
             </div>
           </div>
         </div>
