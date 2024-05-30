@@ -49,6 +49,7 @@ export const Products: CollectionConfig = {
   },
   access: {},
   hooks: {
+    afterChange: [syncUser],
     beforeChange: [
       addUser,
       async (args) => {
