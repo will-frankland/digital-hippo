@@ -8,6 +8,9 @@ const nextConfig = {
         port: "3000",
         pathname: "/media/**",
       },
+      {
+        hostname: 'https://digital-hippo-production-037e.up.railway.app'
+      }
     ],
   },
 };
